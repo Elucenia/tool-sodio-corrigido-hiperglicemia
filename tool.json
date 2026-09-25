@@ -1,0 +1,178 @@
+{
+  "tool": {
+    "id": "sodio-corrigido-hiperglicemia",
+    "title": "Sódio corrigido na hiperglicemia",
+    "short": "Katz (1,6) e Hillier (2,4)",
+    "desc": "Calcule o sódio corrigido pela glicemia com os fatores de Katz (1,6) e de Hillier (2,4) e saiba se há hiponatremia verdadeira ou déficit de água.",
+    "lead": "A hiperglicemia puxa água para o extracelular e dilui o sódio. A correção estima qual seria o sódio com glicemia normal, o que orienta a escolha do soro na cetoacidose e no estado hiperosmolar.",
+    "spec": [
+      "medicina-de-emergencia",
+      "medicina-intensiva",
+      "endocrinologia-e-metabologia",
+      "nefrologia",
+      "pediatria"
+    ],
+    "fields": [
+      [
+        "na",
+        "Sódio medido",
+        "num",
+        {
+          "min": 100,
+          "max": 180,
+          "unit": "mEq/L",
+          "ph": "130"
+        }
+      ],
+      [
+        "glic",
+        "Glicemia",
+        "num",
+        {
+          "min": 50,
+          "max": 2000,
+          "unit": "mg/dL",
+          "ph": "500"
+        }
+      ]
+    ],
+    "formula": "<p><strong>Hillier</strong>: Na corrigido = Na + 2,4 × (glicose − 100) ÷ 100.</p><p><strong>Katz</strong>: Na corrigido = Na + 1,6 × (glicose − 100) ÷ 100.</p>",
+    "table": [
+      [
+        "Sódio corrigido",
+        "Interpretação"
+      ],
+      [
+        "&lt; 135 mEq/L",
+        "Hiponatremia verdadeira associada"
+      ],
+      [
+        "135 a 145 mEq/L",
+        "Sódio real normal (hiponatremia translocacional)"
+      ],
+      [
+        "&gt; 145 mEq/L",
+        "Déficit de água livre (hipernatremia mascarada)"
+      ]
+    ],
+    "tips": [
+      "Hillier mostrou que a queda real é de cerca de 2,4 mEq/L por 100 mg/dL, maior que a prevista por Katz, principalmente com glicemia acima de 400 mg/dL.",
+      "Na cetoacidose e no estado hiperosmolar, o sódio corrigido orienta o soro após a expansão inicial: normal ou alto favorece NaCl 0,45%; baixo favorece NaCl 0,9%.",
+      "Durante o tratamento, o sódio medido deve subir à medida que a glicose cai; se o sódio medido não sobe, há risco de queda rápida da osmolaridade e edema cerebral (sobretudo em crianças).",
+      "Hipertrigliceridemia e paraproteínas causam pseudo-hiponatremia por outro mecanismo: confira com sódio por eletrodo direto (gasometria)."
+    ],
+    "sources": [
+      [
+        "Katz MA. Hyperglycemia-induced hyponatremia: calculation of expected serum sodium depression. N Engl J Med, 1973.",
+        "https://doi.org/10.1056/NEJM197310182891607"
+      ],
+      [
+        "Hillier TA, Abbott RD, Barrett EJ. Hyponatremia: evaluating the correction factor for hyperglycemia. Am J Med, 1999.",
+        "https://doi.org/10.1016/S0002-9343(99)00055-8"
+      ]
+    ],
+    "cases": [
+      [
+        "Na 130, glicose 600: Hillier 142, Katz 138",
+        {
+          "na": 130,
+          "glic": 600
+        },
+        {
+          "raw": {
+            "hillier": 142,
+            "katz": 138
+          },
+          "level": "low"
+        }
+      ],
+      [
+        "Na 128, glicose 300: Hillier 132,8, Katz 131,2",
+        {
+          "na": 128,
+          "glic": 300
+        },
+        {
+          "raw": {
+            "hillier": 132.8,
+            "katz": 131.2
+          },
+          "level": "mid"
+        }
+      ],
+      [
+        "Estado hiperosmolar: Na 142, glicose 800: Hillier 158,8",
+        {
+          "na": 142,
+          "glic": 800
+        },
+        {
+          "raw": {
+            "hillier": 158.8,
+            "katz": 153.2
+          },
+          "level": "high"
+        }
+      ]
+    ],
+    "batch": "urgencia",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "urgencia",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/urgencia.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 2,
+      "passed": 2,
+      "cases": [
+        {
+          "label": "Glicose100 anula ambas correções",
+          "input": {
+            "na": 138,
+            "glic": 100
+          },
+          "expected": {
+            "hillier": 138,
+            "katz": 138
+          },
+          "status": "passed",
+          "failures": []
+        },
+        {
+          "label": "Aumento100 aplica fatores2,4 e1,6",
+          "input": {
+            "na": 138,
+            "glic": 200
+          },
+          "expected": {
+            "hillier": 140.4,
+            "katz": 139.6
+          },
+          "status": "passed",
+          "failures": []
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/urgencia.php",
+    "sha256": "b24f3a77383430c3f3463168e78e88341034b3108bd712f3613ae32672dc281c",
+    "bytes": 121059
+  },
+  "clinicalValidation": "not-performed"
+}

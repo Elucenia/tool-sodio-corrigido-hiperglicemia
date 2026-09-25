@@ -1,0 +1,59 @@
+[
+  {
+    "label": "Na 130, glicose 600: Hillier 142, Katz 138",
+    "input": {
+      "na": 130,
+      "glic": 600
+    },
+    "expected": {
+      "raw": {
+        "hillier": 142,
+        "katz": 138
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "na": 130,
+      "glic": 600
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Na 128, glicose 300: Hillier 132,8, Katz 131,2",
+    "input": {
+      "na": 128,
+      "glic": 300
+    },
+    "expected": {
+      "raw": {
+        "hillier": 132.8,
+        "katz": 131.2
+      },
+      "level": "mid"
+    },
+    "originalInput": {
+      "na": 128,
+      "glic": 300
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Estado hiperosmolar: Na 142, glicose 800: Hillier 158,8",
+    "input": {
+      "na": 142,
+      "glic": 800
+    },
+    "expected": {
+      "raw": {
+        "hillier": 158.8,
+        "katz": 153.2
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "na": 142,
+      "glic": 800
+    },
+    "expandedZeroOptions": []
+  }
+]
