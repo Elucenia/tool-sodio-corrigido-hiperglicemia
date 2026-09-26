@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-sodio-corrigido-hiperglicemia",
   "version": "0.1.0",
-  "description": "Sódio corrigido na hiperglicemia · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "Sódio corrigido na hiperglicemia · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",
