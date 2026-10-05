@@ -5,6 +5,7 @@
     "short": "Katz (1,6) e Hillier (2,4)",
     "desc": "Calcule o sódio corrigido pela glicemia com os fatores de Katz (1,6) e de Hillier (2,4) e saiba se há hiponatremia verdadeira ou déficit de água.",
     "lead": "A hiperglicemia puxa água para o extracelular e dilui o sódio. A correção estima qual seria o sódio com glicemia normal, o que orienta a escolha do soro na cetoacidose e no estado hiperosmolar.",
+    "kind": "Calculadora",
     "spec": [
       "medicina-de-emergencia",
       "medicina-intensiva",
@@ -37,30 +38,6 @@
       ]
     ],
     "formula": "<p><strong>Hillier</strong>: Na corrigido = Na + 2,4 × (glicose − 100) ÷ 100.</p><p><strong>Katz</strong>: Na corrigido = Na + 1,6 × (glicose − 100) ÷ 100.</p>",
-    "table": [
-      [
-        "Sódio corrigido",
-        "Interpretação"
-      ],
-      [
-        "&lt; 135 mEq/L",
-        "Hiponatremia verdadeira associada"
-      ],
-      [
-        "135 a 145 mEq/L",
-        "Sódio real normal (hiponatremia translocacional)"
-      ],
-      [
-        "&gt; 145 mEq/L",
-        "Déficit de água livre (hipernatremia mascarada)"
-      ]
-    ],
-    "tips": [
-      "Hillier mostrou que a queda real é de cerca de 2,4 mEq/L por 100 mg/dL, maior que a prevista por Katz, principalmente com glicemia acima de 400 mg/dL.",
-      "Na cetoacidose e no estado hiperosmolar, o sódio corrigido orienta o soro após a expansão inicial: normal ou alto favorece NaCl 0,45%; baixo favorece NaCl 0,9%.",
-      "Durante o tratamento, o sódio medido deve subir à medida que a glicose cai; se o sódio medido não sobe, há risco de queda rápida da osmolaridade e edema cerebral (sobretudo em crianças).",
-      "Hipertrigliceridemia e paraproteínas causam pseudo-hiponatremia por outro mecanismo: confira com sódio por eletrodo direto (gasometria)."
-    ],
     "sources": [
       [
         "Katz MA. Hyperglycemia-induced hyponatremia: calculation of expected serum sodium depression. N Engl J Med, 1973.",
@@ -69,6 +46,10 @@
       [
         "Hillier TA, Abbott RD, Barrett EJ. Hyponatremia: evaluating the correction factor for hyperglycemia. Am J Med, 1999.",
         "https://doi.org/10.1016/S0002-9343(99)00055-8"
+      ],
+      [
+        "https://pubmed.ncbi.nlm.nih.gov/10225241/",
+        "https://pubmed.ncbi.nlm.nih.gov/10225241/"
       ]
     ],
     "cases": [
@@ -115,9 +96,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -130,40 +108,141 @@
       "testedAt": "2026-09-25",
       "total": 2,
       "passed": 2,
-      "cases": [
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Katz 1973 fator 1,6 e Hillier 1999 fator 2,4 por 100 mg/d Lglicoseacima 100",
+    "implementationVersion": "sodio-corrigido-hiperglicemia@native-2026-10-03+7b0915e4b8a8",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/4763428/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Hillier : Na corrigido = Na + 2,4 × (glicose − 100) ÷ 100. Katz : Na corrigido = Na + 1,6 × (glicose − 100) ÷ 100.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "na",
+            "label": "Sódio medido",
+            "type": "num",
+            "min": 100,
+            "max": 180,
+            "unit": "mEq/L",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "glic",
+            "label": "Glicemia",
+            "type": "num",
+            "min": 50,
+            "max": 2000,
+            "unit": "mg/dL",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "3c45cb0025be52f1e165d0eebc0290f48a3bab7c0e633711a382a44239f086ed"
+      },
+      "sourceEditions": [
         {
-          "label": "Glicose100 anula ambas correções",
-          "input": {
-            "na": 138,
-            "glic": 100
+          "citation": "Katz MA. Hyperglycemia-induced hyponatremia: calculation of expected serum sodium depression. N Engl J Med, 1973.",
+          "url": "https://doi.org/10.1056/NEJM197310182891607",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Hyperglycemia-induced hyponatremia--calculation of expected serum sodium depression.",
+            "year": "1973",
+            "firstPublicationDate": "1973-10-01",
+            "doi": "10.1056/nejm197310182891607",
+            "pmid": "4763428",
+            "journal": "The New England journal of medicine",
+            "authors": "Katz MA."
           },
-          "expected": {
-            "hillier": 138,
-            "katz": 138
-          },
-          "status": "passed",
-          "failures": []
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/4763428/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
         },
         {
-          "label": "Aumento100 aplica fatores2,4 e1,6",
-          "input": {
-            "na": 138,
-            "glic": 200
+          "citation": "Hillier TA, Abbott RD, Barrett EJ. Hyponatremia: evaluating the correction factor for hyperglycemia. Am J Med, 1999.",
+          "url": "https://doi.org/10.1016/S0002-9343(99)00055-8",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Hyponatremia: evaluating the correction factor for hyperglycemia.",
+            "year": "1999",
+            "firstPublicationDate": "1999-04-01",
+            "doi": "10.1016/s0002-9343(99)00055-8",
+            "pmid": "10225241",
+            "journal": "The American journal of medicine",
+            "authors": "Hillier TA, Abbott RD, Barrett EJ."
           },
-          "expected": {
-            "hillier": 140.4,
-            "katz": 139.6
-          },
-          "status": "passed",
-          "failures": []
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/10225241/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "bd96c565c10e0dc8aab3d5d23a29693482b3496d67d24ff77e65a063200ce0b6",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-09-25",
+        "total": 2,
+        "passed": 2,
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "7b0915e4b8a8cb4791363678922740fd2d12c97400bdc895a4a6359c123ead49"
+    },
+    "limits": "Hillier 1999 estudou hiperglicemia aguda induzida em seis participantes saudáveis. A relação sódio–glicose foi não linear, sobretudo acima de 400 mg/dL; o fator médio de 2,4 não descreve com exatidão universal todas as populações e concentrações. Katz 1,6 e Hillier 2,4 são variantes distintas, apresentadas separadamente. O sódio corrigido é uma estimativa, não uma medida futura garantida nem uma prescrição da velocidade de correção.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:03.190Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Katz 1973 sem resumo; comparação experimental Hillier 1999, não linearidade em hiperglicemia acentuada e contexto terapêutico precisam de leitura distinta. Não inferir escolha/dose de soro pelo número."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "primarySupplements": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10225241/",
+          "scope": "Original Hillier1999 abstract fully available/read in indexed primary PubMed search; direct open returned footer only. No claim of full-paper access."
         }
       ]
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/sodio-corrigido-hiperglicemia/calculator.js",
+    "bytes": 4892,
+    "sha256": "7b0915e4b8a8cb4791363678922740fd2d12c97400bdc895a4a6359c123ead49"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "b5e0f8d7c56b0f36fb776649ffca21929e221d05ffb370665a7d3f2e225a81e8",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 2,
+      "sha256": "677c5eda35986fea1d968d2ee38590ebc25c1ea73ab3f477eb9964e6eef49da5",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 2,
+      "sha256": "677c5eda35986fea1d968d2ee38590ebc25c1ea73ab3f477eb9964e6eef49da5",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

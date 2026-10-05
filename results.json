@@ -1,0 +1,316 @@
+{
+  "id": "sodio-corrigido-hiperglicemia",
+  "at": "2026-10-05T17:30:07.058Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/sodio-corrigido-hiperglicemia/calculator.js",
+    "bytes": 4892,
+    "sha256": "7b0915e4b8a8cb4791363678922740fd2d12c97400bdc895a4a6359c123ead49"
+  },
+  "cases": [
+    {
+      "name": "Na 130, glicose 600: Hillier 142, Katz 138",
+      "input": {
+        "na": 130,
+        "glic": 600
+      },
+      "obtained": {
+        "id": "sodio-corrigido-hiperglicemia",
+        "main": [
+          "142,0",
+          "mEq/L"
+        ],
+        "label": "Sódio corrigido (Hillier, 2,4)",
+        "raw": {
+          "hillier": 142,
+          "katz": 138
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.hillier",
+          "expected": 142,
+          "obtained": 142,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.katz",
+          "expected": 138,
+          "obtained": 138,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.hillier",
+          "expected": 142,
+          "obtained": 142,
+          "tolerance": 1.42e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.katz",
+          "expected": 138,
+          "obtained": 138,
+          "tolerance": 1.38e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "142,0",
+          "obtained": "142,0",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "mEq/L",
+          "obtained": "mEq/L",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Na 128, glicose 300: Hillier 132,8, Katz 131,2",
+      "input": {
+        "na": 128,
+        "glic": 300
+      },
+      "obtained": {
+        "id": "sodio-corrigido-hiperglicemia",
+        "main": [
+          "132,8",
+          "mEq/L"
+        ],
+        "label": "Sódio corrigido (Hillier, 2,4)",
+        "raw": {
+          "hillier": 132.8,
+          "katz": 131.2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.hillier",
+          "expected": 132.8,
+          "obtained": 132.8,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.katz",
+          "expected": 131.2,
+          "obtained": 131.2,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.hillier",
+          "expected": 132.8,
+          "obtained": 132.8,
+          "tolerance": 1.328e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.katz",
+          "expected": 131.2,
+          "obtained": 131.2,
+          "tolerance": 1.312e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "132,8",
+          "obtained": "132,8",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "mEq/L",
+          "obtained": "mEq/L",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Estado hiperosmolar: Na 142, glicose 800: Hillier 158,8",
+      "input": {
+        "na": 142,
+        "glic": 800
+      },
+      "obtained": {
+        "id": "sodio-corrigido-hiperglicemia",
+        "main": [
+          "158,8",
+          "mEq/L"
+        ],
+        "label": "Sódio corrigido (Hillier, 2,4)",
+        "raw": {
+          "hillier": 158.8,
+          "katz": 153.2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.hillier",
+          "expected": 158.8,
+          "obtained": 158.8,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.katz",
+          "expected": 153.2,
+          "obtained": 153.2,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.hillier",
+          "expected": 158.8,
+          "obtained": 158.8,
+          "tolerance": 1.588e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.katz",
+          "expected": 153.2,
+          "obtained": 153.2,
+          "tolerance": 1.532e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "158,8",
+          "obtained": "158,8",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "mEq/L",
+          "obtained": "mEq/L",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 24,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

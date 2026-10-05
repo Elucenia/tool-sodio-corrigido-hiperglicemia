@@ -1,6 +1,13 @@
 [
   {
-    "label": "Na 130, glicose 600: Hillier 142, Katz 138",
+    "id": "sodio-corrigido-hiperglicemia",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Na 130, glicose 600: Hillier 142, Katz 138",
+    "originalInput": {
+      "na": 130,
+      "glic": 600
+    },
     "input": {
       "na": 130,
       "glic": 600
@@ -12,14 +19,35 @@
       },
       "level": "low"
     },
-    "originalInput": {
-      "na": 130,
-      "glic": 600
+    "recordedResult": {
+      "main": [
+        "142,0",
+        "mEq/L"
+      ],
+      "label": "Sódio corrigido (Hillier, 2,4)",
+      "raw": {
+        "hillier": 142,
+        "katz": 138
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Na 128, glicose 300: Hillier 132,8, Katz 131,2",
+    "id": "sodio-corrigido-hiperglicemia",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Na 128, glicose 300: Hillier 132,8, Katz 131,2",
+    "originalInput": {
+      "na": 128,
+      "glic": 300
+    },
     "input": {
       "na": 128,
       "glic": 300
@@ -31,14 +59,35 @@
       },
       "level": "mid"
     },
-    "originalInput": {
-      "na": 128,
-      "glic": 300
+    "recordedResult": {
+      "main": [
+        "132,8",
+        "mEq/L"
+      ],
+      "label": "Sódio corrigido (Hillier, 2,4)",
+      "raw": {
+        "hillier": 132.8,
+        "katz": 131.2
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Estado hiperosmolar: Na 142, glicose 800: Hillier 158,8",
+    "id": "sodio-corrigido-hiperglicemia",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Estado hiperosmolar: Na 142, glicose 800: Hillier 158,8",
+    "originalInput": {
+      "na": 142,
+      "glic": 800
+    },
     "input": {
       "na": 142,
       "glic": 800
@@ -50,10 +99,24 @@
       },
       "level": "high"
     },
-    "originalInput": {
-      "na": 142,
-      "glic": 800
+    "recordedResult": {
+      "main": [
+        "158,8",
+        "mEq/L"
+      ],
+      "label": "Sódio corrigido (Hillier, 2,4)",
+      "raw": {
+        "hillier": 158.8,
+        "katz": 153.2
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]
