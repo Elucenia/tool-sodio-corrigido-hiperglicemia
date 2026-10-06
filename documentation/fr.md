@@ -69,3 +69,34 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Sodium corrigé normal : l’hyponatrémie mesurée est due au glucose (translocation d’eau)
+
+| Détails du résultat | |
+| --- | --- |
+| Sodium corrigé (Katz, 1,6) | 138,0 mEq/L |
+
+
+### 2
+
+Hyponatrémie vraie même après correction
+
+| Détails du résultat | |
+| --- | --- |
+| Sodium corrigé (Katz, 1,6) | 131,2 mEq/L |
+
+
+### 3
+
+Sodium corrigé élevé : il existe un déficit en eau libre
+
+| Détails du résultat | |
+| --- | --- |
+| Sodium corrigé (Katz, 1,6) | 153,2 mEq/L |
+

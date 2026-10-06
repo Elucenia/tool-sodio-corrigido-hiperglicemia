@@ -1,0 +1,199 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "sodio-corrigido-hiperglicemia",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "9cf3d701f8b57effcc4c3013f646d74ef49375ac",
+    "oldEngineSha256": "7b0915e4b8a8cb4791363678922740fd2d12c97400bdc895a4a6359c123ead49",
+    "currentEngineSha256": "4c320616e685472be1a6e1a786999d0191e689a5a37624be4e472a9642a8e42e"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Na 130, glicose 600: Hillier 142, Katz 138",
+      "input": {
+        "na": 130,
+        "glic": 600
+      },
+      "publicOutput": {
+        "id": "sodio-corrigido-hiperglicemia",
+        "main": [
+          "142,0",
+          "mEq/L"
+        ],
+        "label": "Sódio corrigido (Hillier, 2,4)",
+        "raw": {
+          "hillier": 142,
+          "katz": 138
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "hillier": 142,
+          "katz": 138
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "142,0",
+          "mEq/L"
+        ],
+        "label": "Sódio corrigido (Hillier, 2,4)",
+        "level": "low",
+        "verdict": "Sódio corrigido normal: a hiponatremia medida se deve à glicose (translocação de água)",
+        "rows": [
+          [
+            "Sódio corrigido (Katz, 1,6)",
+            "138,0 mEq/L"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "hillier": 142,
+          "katz": 138
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Na 128, glicose 300: Hillier 132,8, Katz 131,2",
+      "input": {
+        "na": 128,
+        "glic": 300
+      },
+      "publicOutput": {
+        "id": "sodio-corrigido-hiperglicemia",
+        "main": [
+          "132,8",
+          "mEq/L"
+        ],
+        "label": "Sódio corrigido (Hillier, 2,4)",
+        "raw": {
+          "hillier": 132.8,
+          "katz": 131.2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "hillier": 132.8,
+          "katz": 131.2
+        },
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "132,8",
+          "mEq/L"
+        ],
+        "label": "Sódio corrigido (Hillier, 2,4)",
+        "level": "mid",
+        "verdict": "Hiponatremia verdadeira mesmo após a correção",
+        "rows": [
+          [
+            "Sódio corrigido (Katz, 1,6)",
+            "131,2 mEq/L"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "hillier": 132.8,
+          "katz": 131.2
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Estado hiperosmolar: Na 142, glicose 800: Hillier 158,8",
+      "input": {
+        "na": 142,
+        "glic": 800
+      },
+      "publicOutput": {
+        "id": "sodio-corrigido-hiperglicemia",
+        "main": [
+          "158,8",
+          "mEq/L"
+        ],
+        "label": "Sódio corrigido (Hillier, 2,4)",
+        "raw": {
+          "hillier": 158.8,
+          "katz": 153.2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "hillier": 158.8,
+          "katz": 153.2
+        },
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "158,8",
+          "mEq/L"
+        ],
+        "label": "Sódio corrigido (Hillier, 2,4)",
+        "level": "high",
+        "verdict": "Sódio corrigido elevado: há déficit de água livre",
+        "rows": [
+          [
+            "Sódio corrigido (Katz, 1,6)",
+            "153,2 mEq/L"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "hillier": 158.8,
+          "katz": 153.2
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}

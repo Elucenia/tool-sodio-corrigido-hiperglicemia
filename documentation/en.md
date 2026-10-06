@@ -69,3 +69,34 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Corrected sodium normal: the measured hyponatremia is due to glucose (water translocation)
+
+| Result details | |
+| --- | --- |
+| Corrected sodium (Katz, 1,6) | 138.0 mEq/L |
+
+
+### 2
+
+True hyponatremia even after correction
+
+| Result details | |
+| --- | --- |
+| Corrected sodium (Katz, 1,6) | 131.2 mEq/L |
+
+
+### 3
+
+Corrected sodium elevated: there is free water deficit
+
+| Result details | |
+| --- | --- |
+| Corrected sodium (Katz, 1,6) | 153.2 mEq/L |
+

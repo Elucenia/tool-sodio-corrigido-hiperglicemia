@@ -69,3 +69,34 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Sodio corretto normale: l’iponatriemia misurata è dovuta al glucosio (traslocazione di acqua)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Sodio corretto (Katz, 1,6) | 138,0 mEq/L |
+
+
+### 2
+
+Iponatriemia vera anche dopo la correzione
+
+| Dettagli del risultato | |
+| --- | --- |
+| Sodio corretto (Katz, 1,6) | 131,2 mEq/L |
+
+
+### 3
+
+Sodio corretto elevato: c’è un deficit di acqua libera
+
+| Dettagli del risultato | |
+| --- | --- |
+| Sodio corretto (Katz, 1,6) | 153,2 mEq/L |
+

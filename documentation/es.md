@@ -69,3 +69,34 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Sodio corregido normal: la hiponatremia medida se debe a la glucosa (translocación de agua)
+
+| Detalles del resultado | |
+| --- | --- |
+| Sodio corregido (Katz, 1,6) | 138,0 mEq/L |
+
+
+### 2
+
+Hiponatremia verdadera incluso después de la corrección
+
+| Detalles del resultado | |
+| --- | --- |
+| Sodio corregido (Katz, 1,6) | 131,2 mEq/L |
+
+
+### 3
+
+Sodio corregido elevado: hay déficit de agua libre
+
+| Detalles del resultado | |
+| --- | --- |
+| Sodio corregido (Katz, 1,6) | 153,2 mEq/L |
+

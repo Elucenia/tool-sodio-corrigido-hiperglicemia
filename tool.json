@@ -111,7 +111,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Katz 1973 fator 1,6 e Hillier 1999 fator 2,4 por 100 mg/d Lglicoseacima 100",
-    "implementationVersion": "sodio-corrigido-hiperglicemia@native-2026-10-03+7b0915e4b8a8",
+    "implementationVersion": "sodio-corrigido-hiperglicemia@native-2026-10-05+4c320616e685",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/4763428/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -201,7 +201,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "7b0915e4b8a8cb4791363678922740fd2d12c97400bdc895a4a6359c123ead49"
+      "implementationHash": "4c320616e685472be1a6e1a786999d0191e689a5a37624be4e472a9642a8e42e",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "sodio-corrigido-hiperglicemia@native-2026-10-03+7b0915e4b8a8",
+          "previousImplementationHash": "7b0915e4b8a8cb4791363678922740fd2d12c97400bdc895a4a6359c123ead49",
+          "implementationHash": "4c320616e685472be1a6e1a786999d0191e689a5a37624be4e472a9642a8e42e",
+          "scientificBodySha256": "87bc12e5f3fee8549e5e049b05c26058d14ef0a224ef8f9ee83e05fc230d577e",
+          "metadataContractHash": "3c45cb0025be52f1e165d0eebc0290f48a3bab7c0e633711a382a44239f086ed",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Hillier 1999 estudou hiperglicemia aguda induzida em seis participantes saudáveis. A relação sódio–glicose foi não linear, sobretudo acima de 400 mg/dL; o fator médio de 2,4 não descreve com exatidão universal todas as populações e concentrações. Katz 1,6 e Hillier 2,4 são variantes distintas, apresentadas separadamente. O sódio corrigido é uma estimativa, não uma medida futura garantida nem uma prescrição da velocidade de correção.",
     "sourceLimitEvidence": {
@@ -226,20 +254,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/sodio-corrigido-hiperglicemia/calculator.js",
-    "bytes": 4892,
-    "sha256": "7b0915e4b8a8cb4791363678922740fd2d12c97400bdc895a4a6359c123ead49"
+    "bytes": 5097,
+    "sha256": "4c320616e685472be1a6e1a786999d0191e689a5a37624be4e472a9642a8e42e"
   },
-  "sourceToolSha256": "b5e0f8d7c56b0f36fb776649ffca21929e221d05ffb370665a7d3f2e225a81e8",
+  "sourceToolSha256": "9ac3f56825ea27ebe2ca8038aa8263ebb52d70f817e95b33b6778bd4f2ec11e7",
   "omittedFullReferenceBanks": [
     {
       "rows": 2,
       "sha256": "677c5eda35986fea1d968d2ee38590ebc25c1ea73ab3f477eb9964e6eef49da5",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 2,
       "sha256": "677c5eda35986fea1d968d2ee38590ebc25c1ea73ab3f477eb9964e6eef49da5",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

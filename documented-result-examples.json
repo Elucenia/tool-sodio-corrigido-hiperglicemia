@@ -1,0 +1,888 @@
+{
+  "id": "sodio-corrigido-hiperglicemia",
+  "implementationVersion": "sodio-corrigido-hiperglicemia@native-2026-10-05+4c320616e685",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Na 130, glicose 600: Hillier 142, Katz 138",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sódio corrigido (Katz, 1,6)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "138,0 mEq/L",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sódio corrigido normal: a hiponatremia medida se deve à glicose (translocação de água)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Na 128, glicose 300: Hillier 132,8, Katz 131,2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sódio corrigido (Katz, 1,6)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "131,2 mEq/L",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Hiponatremia verdadeira mesmo após a correção",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Estado hiperosmolar: Na 142, glicose 800: Hillier 158,8",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sódio corrigido (Katz, 1,6)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "153,2 mEq/L",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sódio corrigido elevado: há déficit de água livre",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Na 130, glicose 600: Hillier 142, Katz 138",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Corrected sodium (Katz, 1,6)",
+                "locale": "en",
+                "template": "documented-authored-c8ecb68d733399b52b03"
+              },
+              "value": {
+                "text": "138.0 mEq/L",
+                "locale": "en",
+                "template": "documented-authored-369a86e942d095c8ab30",
+                "sourceNumbers": [
+                  138
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Corrected sodium normal: the measured hyponatremia is due to glucose (water translocation)",
+            "locale": "en",
+            "template": "documented-authored-1da0785c2bb9dcc908ab"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Na 128, glicose 300: Hillier 132,8, Katz 131,2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Corrected sodium (Katz, 1,6)",
+                "locale": "en",
+                "template": "documented-authored-c8ecb68d733399b52b03"
+              },
+              "value": {
+                "text": "131.2 mEq/L",
+                "locale": "en",
+                "template": "documented-authored-369a86e942d095c8ab30",
+                "sourceNumbers": [
+                  131.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "True hyponatremia even after correction",
+            "locale": "en",
+            "template": "documented-authored-e372505676539ff0c6cf"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Estado hiperosmolar: Na 142, glicose 800: Hillier 158,8",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Corrected sodium (Katz, 1,6)",
+                "locale": "en",
+                "template": "documented-authored-c8ecb68d733399b52b03"
+              },
+              "value": {
+                "text": "153.2 mEq/L",
+                "locale": "en",
+                "template": "documented-authored-369a86e942d095c8ab30",
+                "sourceNumbers": [
+                  153.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Corrected sodium elevated: there is free water deficit",
+            "locale": "en",
+            "template": "documented-authored-b877d8b26b5990d8969b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Na 130, glicose 600: Hillier 142, Katz 138",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sodio corregido (Katz, 1,6)",
+                "locale": "es",
+                "template": "documented-authored-c8ecb68d733399b52b03"
+              },
+              "value": {
+                "text": "138,0 mEq/L",
+                "locale": "es",
+                "template": "documented-authored-369a86e942d095c8ab30",
+                "sourceNumbers": [
+                  138
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sodio corregido normal: la hiponatremia medida se debe a la glucosa (translocación de agua)",
+            "locale": "es",
+            "template": "documented-authored-1da0785c2bb9dcc908ab"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Na 128, glicose 300: Hillier 132,8, Katz 131,2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sodio corregido (Katz, 1,6)",
+                "locale": "es",
+                "template": "documented-authored-c8ecb68d733399b52b03"
+              },
+              "value": {
+                "text": "131,2 mEq/L",
+                "locale": "es",
+                "template": "documented-authored-369a86e942d095c8ab30",
+                "sourceNumbers": [
+                  131.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Hiponatremia verdadera incluso después de la corrección",
+            "locale": "es",
+            "template": "documented-authored-e372505676539ff0c6cf"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Estado hiperosmolar: Na 142, glicose 800: Hillier 158,8",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sodio corregido (Katz, 1,6)",
+                "locale": "es",
+                "template": "documented-authored-c8ecb68d733399b52b03"
+              },
+              "value": {
+                "text": "153,2 mEq/L",
+                "locale": "es",
+                "template": "documented-authored-369a86e942d095c8ab30",
+                "sourceNumbers": [
+                  153.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sodio corregido elevado: hay déficit de agua libre",
+            "locale": "es",
+            "template": "documented-authored-b877d8b26b5990d8969b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Na 130, glicose 600: Hillier 142, Katz 138",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sodium corrigé (Katz, 1,6)",
+                "locale": "fr",
+                "template": "documented-authored-c8ecb68d733399b52b03"
+              },
+              "value": {
+                "text": "138,0 mEq/L",
+                "locale": "fr",
+                "template": "documented-authored-369a86e942d095c8ab30",
+                "sourceNumbers": [
+                  138
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sodium corrigé normal : l’hyponatrémie mesurée est due au glucose (translocation d’eau)",
+            "locale": "fr",
+            "template": "documented-authored-1da0785c2bb9dcc908ab"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Na 128, glicose 300: Hillier 132,8, Katz 131,2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sodium corrigé (Katz, 1,6)",
+                "locale": "fr",
+                "template": "documented-authored-c8ecb68d733399b52b03"
+              },
+              "value": {
+                "text": "131,2 mEq/L",
+                "locale": "fr",
+                "template": "documented-authored-369a86e942d095c8ab30",
+                "sourceNumbers": [
+                  131.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Hyponatrémie vraie même après correction",
+            "locale": "fr",
+            "template": "documented-authored-e372505676539ff0c6cf"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Estado hiperosmolar: Na 142, glicose 800: Hillier 158,8",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sodium corrigé (Katz, 1,6)",
+                "locale": "fr",
+                "template": "documented-authored-c8ecb68d733399b52b03"
+              },
+              "value": {
+                "text": "153,2 mEq/L",
+                "locale": "fr",
+                "template": "documented-authored-369a86e942d095c8ab30",
+                "sourceNumbers": [
+                  153.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sodium corrigé élevé : il existe un déficit en eau libre",
+            "locale": "fr",
+            "template": "documented-authored-b877d8b26b5990d8969b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Na 130, glicose 600: Hillier 142, Katz 138",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Korrigiertes Natrium (Katz, 1,6)",
+                "locale": "de",
+                "template": "documented-authored-c8ecb68d733399b52b03"
+              },
+              "value": {
+                "text": "138,0 mEq/L",
+                "locale": "de",
+                "template": "documented-authored-369a86e942d095c8ab30",
+                "sourceNumbers": [
+                  138
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Korrigiertes Natrium normal: die gemessene Hyponatriämie ist auf Glukose zurückzuführen (Wassertranslokation)",
+            "locale": "de",
+            "template": "documented-authored-1da0785c2bb9dcc908ab"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Na 128, glicose 300: Hillier 132,8, Katz 131,2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Korrigiertes Natrium (Katz, 1,6)",
+                "locale": "de",
+                "template": "documented-authored-c8ecb68d733399b52b03"
+              },
+              "value": {
+                "text": "131,2 mEq/L",
+                "locale": "de",
+                "template": "documented-authored-369a86e942d095c8ab30",
+                "sourceNumbers": [
+                  131.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Echte Hyponatriämie auch nach Korrektur",
+            "locale": "de",
+            "template": "documented-authored-e372505676539ff0c6cf"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Estado hiperosmolar: Na 142, glicose 800: Hillier 158,8",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Korrigiertes Natrium (Katz, 1,6)",
+                "locale": "de",
+                "template": "documented-authored-c8ecb68d733399b52b03"
+              },
+              "value": {
+                "text": "153,2 mEq/L",
+                "locale": "de",
+                "template": "documented-authored-369a86e942d095c8ab30",
+                "sourceNumbers": [
+                  153.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Korrigiertes Natrium erhöht: es besteht ein freier Wasserdefizit",
+            "locale": "de",
+            "template": "documented-authored-b877d8b26b5990d8969b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Na 130, glicose 600: Hillier 142, Katz 138",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sodio corretto (Katz, 1,6)",
+                "locale": "it",
+                "template": "documented-authored-c8ecb68d733399b52b03"
+              },
+              "value": {
+                "text": "138,0 mEq/L",
+                "locale": "it",
+                "template": "documented-authored-369a86e942d095c8ab30",
+                "sourceNumbers": [
+                  138
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sodio corretto normale: l’iponatriemia misurata è dovuta al glucosio (traslocazione di acqua)",
+            "locale": "it",
+            "template": "documented-authored-1da0785c2bb9dcc908ab"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Na 128, glicose 300: Hillier 132,8, Katz 131,2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sodio corretto (Katz, 1,6)",
+                "locale": "it",
+                "template": "documented-authored-c8ecb68d733399b52b03"
+              },
+              "value": {
+                "text": "131,2 mEq/L",
+                "locale": "it",
+                "template": "documented-authored-369a86e942d095c8ab30",
+                "sourceNumbers": [
+                  131.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Iponatriemia vera anche dopo la correzione",
+            "locale": "it",
+            "template": "documented-authored-e372505676539ff0c6cf"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Estado hiperosmolar: Na 142, glicose 800: Hillier 158,8",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sodio corretto (Katz, 1,6)",
+                "locale": "it",
+                "template": "documented-authored-c8ecb68d733399b52b03"
+              },
+              "value": {
+                "text": "153,2 mEq/L",
+                "locale": "it",
+                "template": "documented-authored-369a86e942d095c8ab30",
+                "sourceNumbers": [
+                  153.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sodio corretto elevato: c’è un deficit di acqua libera",
+            "locale": "it",
+            "template": "documented-authored-b877d8b26b5990d8969b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Na 130, glicose 600: Hillier 142, Katz 138",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الصوديوم المصحح (Katz, 1,6)",
+                "locale": "ar",
+                "template": "documented-authored-c8ecb68d733399b52b03"
+              },
+              "value": {
+                "text": "١٣٨٫٠ mEq/L",
+                "locale": "ar",
+                "template": "documented-authored-369a86e942d095c8ab30",
+                "sourceNumbers": [
+                  138
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "الصوديوم المصحح طبيعي: نقص صوديوم الدم المقاس ناتج عن الغلوكوز (انتقال الماء)",
+            "locale": "ar",
+            "template": "documented-authored-1da0785c2bb9dcc908ab"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Na 128, glicose 300: Hillier 132,8, Katz 131,2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الصوديوم المصحح (Katz, 1,6)",
+                "locale": "ar",
+                "template": "documented-authored-c8ecb68d733399b52b03"
+              },
+              "value": {
+                "text": "١٣١٫٢ mEq/L",
+                "locale": "ar",
+                "template": "documented-authored-369a86e942d095c8ab30",
+                "sourceNumbers": [
+                  131.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "نقص صوديوم حقيقي حتى بعد التصحيح",
+            "locale": "ar",
+            "template": "documented-authored-e372505676539ff0c6cf"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Estado hiperosmolar: Na 142, glicose 800: Hillier 158,8",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الصوديوم المصحح (Katz, 1,6)",
+                "locale": "ar",
+                "template": "documented-authored-c8ecb68d733399b52b03"
+              },
+              "value": {
+                "text": "١٥٣٫٢ mEq/L",
+                "locale": "ar",
+                "template": "documented-authored-369a86e942d095c8ab30",
+                "sourceNumbers": [
+                  153.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "الصوديوم المصحح مرتفع: هناك عجز في الماء الحر",
+            "locale": "ar",
+            "template": "documented-authored-b877d8b26b5990d8969b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Na 130, glicose 600: Hillier 142, Katz 138",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "校正钠（Katz，1,6）",
+                "locale": "zh",
+                "template": "documented-authored-c8ecb68d733399b52b03"
+              },
+              "value": {
+                "text": "138.0 mEq/L",
+                "locale": "zh",
+                "template": "documented-authored-369a86e942d095c8ab30",
+                "sourceNumbers": [
+                  138
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "校正钠正常：测得的低钠血症由葡萄糖所致（水移位）",
+            "locale": "zh",
+            "template": "documented-authored-1da0785c2bb9dcc908ab"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Na 128, glicose 300: Hillier 132,8, Katz 131,2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "校正钠（Katz，1,6）",
+                "locale": "zh",
+                "template": "documented-authored-c8ecb68d733399b52b03"
+              },
+              "value": {
+                "text": "131.2 mEq/L",
+                "locale": "zh",
+                "template": "documented-authored-369a86e942d095c8ab30",
+                "sourceNumbers": [
+                  131.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "即使校正后仍为真性低钠血症",
+            "locale": "zh",
+            "template": "documented-authored-e372505676539ff0c6cf"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Estado hiperosmolar: Na 142, glicose 800: Hillier 158,8",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "校正钠（Katz，1,6）",
+                "locale": "zh",
+                "template": "documented-authored-c8ecb68d733399b52b03"
+              },
+              "value": {
+                "text": "153.2 mEq/L",
+                "locale": "zh",
+                "template": "documented-authored-369a86e942d095c8ab30",
+                "sourceNumbers": [
+                  153.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "校正钠升高：存在游离水缺乏",
+            "locale": "zh",
+            "template": "documented-authored-b877d8b26b5990d8969b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Na 130, glicose 600: Hillier 142, Katz 138",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "補正ナトリウム（Katz, 1,6）",
+                "locale": "ja",
+                "template": "documented-authored-c8ecb68d733399b52b03"
+              },
+              "value": {
+                "text": "138.0 mEq/L",
+                "locale": "ja",
+                "template": "documented-authored-369a86e942d095c8ab30",
+                "sourceNumbers": [
+                  138
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "補正ナトリウムは正常：測定された低ナトリウム血症はブドウ糖によるもの（水移動）",
+            "locale": "ja",
+            "template": "documented-authored-1da0785c2bb9dcc908ab"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Na 128, glicose 300: Hillier 132,8, Katz 131,2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "補正ナトリウム（Katz, 1,6）",
+                "locale": "ja",
+                "template": "documented-authored-c8ecb68d733399b52b03"
+              },
+              "value": {
+                "text": "131.2 mEq/L",
+                "locale": "ja",
+                "template": "documented-authored-369a86e942d095c8ab30",
+                "sourceNumbers": [
+                  131.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "補正後でも真の低ナトリウム血症",
+            "locale": "ja",
+            "template": "documented-authored-e372505676539ff0c6cf"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Estado hiperosmolar: Na 142, glicose 800: Hillier 158,8",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "補正ナトリウム（Katz, 1,6）",
+                "locale": "ja",
+                "template": "documented-authored-c8ecb68d733399b52b03"
+              },
+              "value": {
+                "text": "153.2 mEq/L",
+                "locale": "ja",
+                "template": "documented-authored-369a86e942d095c8ab30",
+                "sourceNumbers": [
+                  153.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "補正ナトリウム高値：自由水欠乏がある",
+            "locale": "ja",
+            "template": "documented-authored-b877d8b26b5990d8969b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Na 130, glicose 600: Hillier 142, Katz 138",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "सुधारित सोडियम (Katz, 1,6)",
+                "locale": "hi",
+                "template": "documented-authored-c8ecb68d733399b52b03"
+              },
+              "value": {
+                "text": "138.0 mEq/L",
+                "locale": "hi",
+                "template": "documented-authored-369a86e942d095c8ab30",
+                "sourceNumbers": [
+                  138
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "सुधारित सोडियम सामान्य: मापा गया हाइपोनैट्रेमिया ग्लूकोज के कारण है (जल स्थानांतरण)",
+            "locale": "hi",
+            "template": "documented-authored-1da0785c2bb9dcc908ab"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Na 128, glicose 300: Hillier 132,8, Katz 131,2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "सुधारित सोडियम (Katz, 1,6)",
+                "locale": "hi",
+                "template": "documented-authored-c8ecb68d733399b52b03"
+              },
+              "value": {
+                "text": "131.2 mEq/L",
+                "locale": "hi",
+                "template": "documented-authored-369a86e942d095c8ab30",
+                "sourceNumbers": [
+                  131.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "सुधार के बाद भी वास्तविक हाइपोनेट्रेमिया",
+            "locale": "hi",
+            "template": "documented-authored-e372505676539ff0c6cf"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Estado hiperosmolar: Na 142, glicose 800: Hillier 158,8",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "सुधारित सोडियम (Katz, 1,6)",
+                "locale": "hi",
+                "template": "documented-authored-c8ecb68d733399b52b03"
+              },
+              "value": {
+                "text": "153.2 mEq/L",
+                "locale": "hi",
+                "template": "documented-authored-369a86e942d095c8ab30",
+                "sourceNumbers": [
+                  153.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "सुधारित सोडियम ऊँचा है: मुक्त जल की कमी है",
+            "locale": "hi",
+            "template": "documented-authored-b877d8b26b5990d8969b"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

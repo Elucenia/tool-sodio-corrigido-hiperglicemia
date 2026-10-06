@@ -1,6 +1,6 @@
 {
   "id": "sodio-corrigido-hiperglicemia",
-  "scope": "Exclusive report-owned R6-HTTP-linked candidate, read-only default test",
+  "scope": "Immutable package integrity; tests write no files",
   "files": [
     {
       "path": ".gitattributes",
@@ -24,8 +24,8 @@
     },
     {
       "path": "calculator.browser.js",
-      "bytes": 4892,
-      "sha256": "7b0915e4b8a8cb4791363678922740fd2d12c97400bdc895a4a6359c123ead49"
+      "bytes": 5097,
+      "sha256": "4c320616e685472be1a6e1a786999d0191e689a5a37624be4e472a9642a8e42e"
     },
     {
       "path": "calculator.js",
@@ -39,8 +39,8 @@
     },
     {
       "path": "CODE-COMPONENTS.md",
-      "bytes": 1123,
-      "sha256": "4e8bbbe91779cdca01fac5f9d87e9c903778d83557659412c7865ea0fffbe595"
+      "bytes": 1392,
+      "sha256": "70d70f69cfe830a8a64d55ae0597af8e420a7c7a7d3d0e5c1c9741f28223da2d"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -49,68 +49,78 @@
     },
     {
       "path": "demo-runtime.js",
-      "bytes": 11656,
-      "sha256": "734da1ceff19b961423e1bb5d2c9eaafd18920b32cc4f331856f6065c9cfd2c9"
+      "bytes": 14286,
+      "sha256": "187cb0a3f2693707660f7fc69fc63ce5e30055a5ccdc621cc7945a0d3b1d2918"
     },
     {
       "path": "documentation/ar.md",
-      "bytes": 3878,
-      "sha256": "b1790ae1ad9a7c26f5ad32f44f65f85fc52650125214845b842a789d83d731c4"
+      "bytes": 4741,
+      "sha256": "2ae792f2280230ada7970ba16901ce72a06d60613ca0c84d894f2f3928f75daf"
     },
     {
       "path": "documentation/de.md",
-      "bytes": 3324,
-      "sha256": "817b40f958a7b6bebe0334982d2d136d37feb394a7ef13e385608e71cc0c04c9"
+      "bytes": 4008,
+      "sha256": "8aace70dfc48e847d5317de38f43c985d75aa6daf164f566cdff709cc39e2f62"
     },
     {
       "path": "documentation/en.md",
-      "bytes": 2932,
-      "sha256": "11f43fa1ab0996dcb0417c11cc200df9e9022d8283259312593f013ae463449b"
+      "bytes": 3549,
+      "sha256": "10fe75cdf42f4be77c33569957782c74f6e632eb350cb1f07a11581f4082e386"
     },
     {
       "path": "documentation/es.md",
-      "bytes": 3201,
-      "sha256": "d4aae5e63a5fb943c3c9cc5b4e8587e625f1a7f609f5b477c26b00f434f4be9b"
+      "bytes": 3870,
+      "sha256": "ff62b39c9bc64a57b2c858993f70495836747078d928123ea29b5a9808ad48d4"
     },
     {
       "path": "documentation/fr.md",
-      "bytes": 3355,
-      "sha256": "4201d882b465b2da3e199cdaa6c9fec9c584c0eaa720cd5deda0bddebfb35273"
+      "bytes": 4040,
+      "sha256": "6622454b623a8b145fceb28f9c6f7c9698961dda88a301fd578e59d36d1bf01c"
     },
     {
       "path": "documentation/hi.md",
-      "bytes": 5445,
-      "sha256": "30d985895527a43c3ec053d906ced7357448e582867bf85031856e22df2cd352"
+      "bytes": 6682,
+      "sha256": "b6798d4591d719606784ce667277ffe48e79035a9461e5c119ad90065d809d41"
     },
     {
       "path": "documentation/it.md",
-      "bytes": 3153,
-      "sha256": "a6ea02480738da58144d58d702702871cb433d395fd09c6b40ef9205a375c584"
+      "bytes": 3808,
+      "sha256": "3ae48a0e911a5147f765651183f3f9947f0d1314d471fddc318de06c6cb90bf6"
     },
     {
       "path": "documentation/ja.md",
-      "bytes": 3366,
-      "sha256": "32fc96488b58ac73117f6972f06db3e4bc5249d4b3d7ff308e72154271dd322f"
+      "bytes": 4069,
+      "sha256": "77b2278899ebcce4209a8a9936a4d2a7c1cebbebbc0cec67feb1033c335bba47"
     },
     {
       "path": "documentation/pt-BR.md",
-      "bytes": 3033,
-      "sha256": "cde538d44984402bbab954a67b8c52e6332860c0a51b3648d65b815455209d9d"
+      "bytes": 3688,
+      "sha256": "63cafd605c5b8ad6ed135c41b1c953998d1448cc13ad5a2e88e5ed009504e9fe"
     },
     {
       "path": "documentation/zh.md",
-      "bytes": 2593,
-      "sha256": "033c81e7c6cfde2ae2b6c1c57a71035978ba5065d008b307cfd361f9fe81c6b8"
+      "bytes": 3119,
+      "sha256": "f7ac6bf438c1f304ef3c46d73fc6db13580f6e88be3c2fd8834a3aa13b834f34"
+    },
+    {
+      "path": "documented-result-examples.json",
+      "bytes": 28081,
+      "sha256": "d891b633033d5d5779601420dc7df81b5fa138f9feaea4cf001a37afa95f4709"
     },
     {
       "path": "engine/tool-code/sodio-corrigido-hiperglicemia/calculator.js",
-      "bytes": 4892,
-      "sha256": "7b0915e4b8a8cb4791363678922740fd2d12c97400bdc895a4a6359c123ead49"
+      "bytes": 5097,
+      "sha256": "4c320616e685472be1a6e1a786999d0191e689a5a37624be4e472a9642a8e42e"
     },
     {
       "path": "evidence/publication-base-reference.json",
       "bytes": 2835,
       "sha256": "c2b70c97d23d95f31044db3d5ec80af9a5cb83961389318e154522bfa0d85153"
+    },
+    {
+      "path": "evidence/publication-provenance-before-output-contract.json",
+      "bytes": 12118,
+      "sha256": "a22229def0b74c41fca50416b6d6268e37072db0dd862a410ae7c866b03090d2"
     },
     {
       "path": "evidence/served-http-r6.json",
@@ -134,8 +144,8 @@
     },
     {
       "path": "localization.js",
-      "bytes": 40426,
-      "sha256": "c6647a875a9b0fc0203a29c67075ceddd34d85338e815cc68d9588e65eca0535"
+      "bytes": 53166,
+      "sha256": "041b58aaa53a133a0d27801290287c4b9388dd0f3c4e9e54f2399403f807c903"
     },
     {
       "path": "METHOD-CODE-LICENSE.txt",
@@ -154,23 +164,23 @@
     },
     {
       "path": "package.json",
-      "bytes": 401,
-      "sha256": "6a0b3095792e55baa6d8d072d58886c5f884728652fcc33c167520f976a433a0"
+      "bytes": 495,
+      "sha256": "92916a0274aa366035ab551e414b762b4d2f77991aba8149310f22e09b089077"
     },
     {
       "path": "portal-formatters.browser.js",
-      "bytes": 31300,
-      "sha256": "d8522ffe0b858012dfd25e5e8d10fe2eefec977f2bdb612be5cbadf5c4bed9f3"
+      "bytes": 38687,
+      "sha256": "cf0668f6fd44a80a3e4064915cf2da02d2203a9596bd39a9a0a6025fb12e17f4"
     },
     {
       "path": "publication-provenance.json",
-      "bytes": 12118,
-      "sha256": "a22229def0b74c41fca50416b6d6268e37072db0dd862a410ae7c866b03090d2"
+      "bytes": 6407,
+      "sha256": "03af0291009798b71a840f2c4bca3095c1053601d6f59ce970aebf4458b614c6"
     },
     {
       "path": "README.md",
-      "bytes": 3240,
-      "sha256": "cfb69398452d4e9b754fc9e9e63af469a2bac1f691f5317c93c519ffa9c2613a"
+      "bytes": 3835,
+      "sha256": "0311019378864cb3fbfd91fadf13d6eef3cecfa17983f68a7b27382e23f14405"
     },
     {
       "path": "rejections.json",
@@ -188,9 +198,24 @@
       "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
     },
     {
+      "path": "source-result-contract.json",
+      "bytes": 5356,
+      "sha256": "38ef2c3f550ea9172828e540b757cc63499b3b314cf8783ed46827e1c849e5e7"
+    },
+    {
       "path": "SOURCE-RIGHTS-REVIEW.md",
       "bytes": 1771,
       "sha256": "f723c80b3591906803fe07d61750ba463e143f855817a931e2248992fa1e51ed"
+    },
+    {
+      "path": "test-presentation-contract.cjs",
+      "bytes": 1923,
+      "sha256": "a4a1734ea3d00c17ffeed7abbd605663459b7c190b695d2396cc58da93215cec"
+    },
+    {
+      "path": "test-source-result-contract.cjs",
+      "bytes": 1416,
+      "sha256": "cbadaf0576ecc2884c7523902880d2068e3a9b6b63df418359ab42219af2e386"
     },
     {
       "path": "test.cjs",
@@ -199,8 +224,8 @@
     },
     {
       "path": "tool.json",
-      "bytes": 9593,
-      "sha256": "0837033b17e1edeb0e90cf68556274f2894c6aa33609f52fcfa2f5a74ed22231"
+      "bytes": 11103,
+      "sha256": "f93e568eaab30f940f5150bea0d81a25892761e3cdceeba8da1985fb3e7fc287"
     }
   ]
 }

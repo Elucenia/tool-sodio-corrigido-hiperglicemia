@@ -69,3 +69,34 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Korrigiertes Natrium normal: die gemessene Hyponatriämie ist auf Glukose zurückzuführen (Wassertranslokation)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Korrigiertes Natrium (Katz, 1,6) | 138,0 mEq/L |
+
+
+### 2
+
+Echte Hyponatriämie auch nach Korrektur
+
+| Ergebnisdetails | |
+| --- | --- |
+| Korrigiertes Natrium (Katz, 1,6) | 131,2 mEq/L |
+
+
+### 3
+
+Korrigiertes Natrium erhöht: es besteht ein freier Wasserdefizit
+
+| Ergebnisdetails | |
+| --- | --- |
+| Korrigiertes Natrium (Katz, 1,6) | 153,2 mEq/L |
+
